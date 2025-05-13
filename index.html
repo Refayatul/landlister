@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandLister - Your Property Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo/Group 1.png" alt="LandLister Logo" style="height: 40px; margin-right: 10px;">
+                <span>LAND</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#">Sell Your Land</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <span class="icon user-name"><i class="far fa-user-circle"></i> Md. Rimon Miah</span>
+                <span class="icon"><a href="#" style="color: #555; text-decoration: none;"><i class="fas fa-sign-out-alt"></i> Log Out</a></span>
+                <button class="add-property-btn"><i class="fas fa-plus"></i> Add property</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container page-content">
+        <section class="hero-section">
+            <h1>Find Your Perfect Land</h1>
+            <p>Discover a wide range of land properties for sale and rent.</p>
+            <!-- Optional: Search bar here -->
+        </section>
+
+        <h2 class="section-title" id="properties">Our Properties</h2>
+        <ul class="p_type">
+            <li><a href="#" class="active">All Properties</a></li>
+            <li><a href="#">For Sale</a></li>
+            <li><a href="#">For Rent</a></li>
+        </ul>
+
+        <div class="land-listings">
+            <a href="landInfo.html?id=1" class="land-card">
+                <img src="https://via.placeholder.com/400x250?text=Property+Image+1" alt="Property 1">
+                <div class="land-card-footer">
+                    <h5>Residential Lands</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Bashundhara R/A, Dhaka</p>
+                    <span><i class="fas fa-ruler-combined"></i> 5 Katha</span>
+                    <span><i class="fas fa-tag"></i> ৳75,00,000</span>
+                </div>
+            </a>
+            <a href="landInfo.html?id=2" class="land-card">
+                <img src="https://via.placeholder.com/400x250?text=Property+Image+2" alt="Property 2">
+                <div class="land-card-footer">
+                    <h5>Commercial Space</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Gulshan, Dhaka</p>
+                    <span><i class="fas fa-ruler-combined"></i> 10 Katha</span>
+                    <span><i class="fas fa-tag"></i> ৳2,50,00,000</span>
+                </div>
+            </a>
+            <a href="landInfo.html?id=3" class="land-card">
+                <img src="https://via.placeholder.com/400x250?text=Property+Image+3" alt="Property 3">
+                <div class="land-card-footer">
+                    <h5>Agricultural Lands</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Savar, Dhaka</p>
+                    <span><i class="fas fa-ruler-combined"></i> 3 Bigha</span>
+                    <span><i class="fas fa-tag"></i> ৳90,00,000</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="btn-container">
+            <a href="#" class="btn-primary">See All Properties <img src="logo/arrow.png" alt="arrow" style="height: 12px; margin-left: 5px;"></a>
+        </div>
+
+        <div class="quicksearch">
+            <h3>Quick Search</h3>
+            <p>
+                <a href="#">Agriculture</a>
+                <a href="#">Residential</a>
+                <a href="#">Commercial</a>
+            </p>
+        </div>
+
+        <h2 class="section-title">Recently Sold</h2>
+        <div class="sold-listings">
+            <div class="sold-card">
+                <img src="https://via.placeholder.com/300x200?text=Sold+Property+1" alt="Sold Property 1">
+                <div><p>Plot in Mirpur DOHS. Sold quickly!</p></div>
+            </div>
+            <div class="sold-card">
+                <img src="https://via.placeholder.com/300x200?text=Sold+Property+2" alt="Sold Property 2">
+                <div><p>Farmland near Gazipur. Great deal.</p></div>
+            </div>
+            <div class="sold-card">
+                <img src="https://via.placeholder.com/300x200?text=Sold+Property+3" alt="Sold Property 3">
+                <div><p>Commercial plot in Motijheel. Excellent investment.</p></div>
+            </div>
+        </div>
+
+        <section class="about-us-section" id="about">
+            <div class="about-content">
+                <div class="left">
+                    <h2>Join Us for Positive Change</h2>
+                    <p>At LandLister, we are committed to connecting buyers and sellers with transparency and trust. We believe in making the process of finding and acquiring land simple and efficient.</p>
+                </div>
+                <div class="right">
+                    <img src="https://via.placeholder.com/400x300?text=Our+Team+or+Vision" alt="About LandLister">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer" id="contact">
+        <div class="footer-content container">
+            <div class="footer-column">
+                <div class="logo-footer">
+                    <img src="logo/Group 1.png" alt="LandLister Logo" style="height: 30px; margin-right: 8px;">
+                    LAND
+                </div>
+                <p class="contact-info"><i class="far fa-envelope"></i> contact@landlister.com.bd</p>
+                <p class="contact-info"><i class="fas fa-phone-alt"></i> +880 17790XXXXX</p>
+                <address>
+                    Md. Shimanto Miah <br>
+                    Mirpur DOHS, Dhaka-1216<br>
+                    Dhaka,Bangladesh
+                 </address>
+            </div>
+            <div class="footer-column">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="#">Buy Property</a></li>
+                    <li><a href="#">Sell Property</a></li>
+                    <li><a href="#">Popular Offers</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Profile</h4>
+                <ul>
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">My listings</a></li>
+                    <li><a href="#">Add listings</a></li>
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Get exclusive advice</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2025 LandLister Bangladesh. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
