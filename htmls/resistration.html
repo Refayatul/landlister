@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - LandLister</title>
+    <link rel="stylesheet" href="../styles/styleHome.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+      body.registration-page-body {
+        background-color: #0f2541;
+      }
+
+      .registration-form-container {
+        background-color: #16213e;
+        padding: 30px 35px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        max-width: 500px;
+        width: 100%;
+        margin: 40px auto;
+      }
+
+      .registration-form-container h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: var(--theme_pink_accent, #e94560);
+        font-family: var(--Poppins, sans-serif);
+        font-size: 2em;
+        font-weight: 600;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: var(--text_color_light, #f1f1f1);
+        font-family: var(--Poppins, sans-serif);
+        font-size: 0.95em;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #3a4a6b;
+        background-color: #1e2a40;
+        border-radius: 8px;
+        color: var(--text_color_light, #f1f1f1);
+        transition: border-color 0.3s ease, background-color 0.3s ease;
+        font-family: var(--Poppins, sans-serif);
+        font-size: 1em;
+      }
+
+      .form-group input:focus {
+        border-color: var(--theme_pink_accent, #e94560);
+        outline: none;
+        background-color: #24324f;
+        box-shadow: 0 0 0 2px rgba(233, 69, 96, 0.2);
+      }
+
+      .form-submit-btn {
+        width: 100%;
+        background-color: var(--theme_pink_accent, #e94560);
+        color: var(--text_color_dark_emphasis, #fff);
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.05em;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        font-family: var(--Poppins, sans-serif);
+        margin-top: 10px;
+      }
+
+      .form-submit-btn:hover {
+        background-color: #ff5b74;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(233, 69, 96, 0.3);
+      }
+
+      .login-link {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9em;
+        font-family: var(--Poppins, sans-serif);
+      }
+      .login-link a {
+        color: var(--theme_pink_accent, #e94560);
+        text-decoration: none;
+        font-weight: 500;
+      }
+      .login-link a:hover {
+        text-decoration: underline;
+      }
+
+      .header-actions .login-btn-header {
+        padding: 8px 15px;
+        border: 1px solid var(--theme_pink_accent, #e94560);
+        color: var(--theme_pink_accent, #e94560);
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .header-actions .login-btn-header:hover {
+        background-color: var(--theme_pink_accent, #e94560);
+        color: var(--text_color_dark_emphasis, #fff);
+      }
+      .header-actions .login-btn-header i {
+        color: inherit;
+      }
+
+      @media (max-width: 540px) {
+        .registration-form-container {
+          padding: 25px 20px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        .registration-form-container h2 {
+          font-size: 1.8em;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="registration-page-body">
+    <div class="page-content-wrapper">
+      <header>
+        <div class="container">
+          <div class="logo">
+            <img src="../assets/images/logo.png" alt="LandLister Logo" />
+            <span>LandLister</span>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../htmls/about.html">About Us</a></li>
+              <li><a href="../htmls/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <span class="icon">
+              <a href="login.html" title="Log In" class="login-btn-header"
+                ><i class="fas fa-sign-in-alt"></i> Log In</a
+              >
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="registration-form-container">
+          <h2>Create Your Account</h2>
+          <form id="registrationForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="f_name">Father's Name</label>
+              <input
+                type="text"
+                id="f_name"
+                placeholder="Enter father's name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="NID">National ID (NID)</label>
+              <input
+                type="text"
+                id="NID"
+                placeholder="Enter NID number"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="dob">Date of Birth</label>
+              <input type="date" id="dob" required />
+            </div>
+
+            <div class="form-group">
+              <label for="m_n">Mobile No</label>
+              <input
+                type="tel"
+                id="m_n"
+                placeholder="Enter 11-digit mobile number"
+                pattern="01[3-9][0-9]{8}"
+                title="Please enter a valid 11-digit Bangladeshi mobile number (e.g., 01xxxxxxxxx)."
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="pw">Password</label>
+              <input
+                type="password"
+                id="pw"
+                placeholder="Create a strong password"
+                required
+                minlength="6"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="pw2">Confirm Password</label>
+              <input
+                type="password"
+                id="pw2"
+                placeholder="Confirm your password"
+                required
+              />
+            </div>
+
+            <button type="submit" class="form-submit-btn">Register</button>
+          </form>
+          <p class="login-link">
+            Already have an account? <a href="login.html">Log In</a>
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer" id="contact">
+      <div class="footer-content container">
+        <div class="footer-column">
+          <div class="logo-footer">
+            <img src="../assets/images/logo.png" alt="LandLister Logo" />
+            LAND LISTER
+          </div>
+          <p class="contact-info">
+            <i class="far fa-envelope"></i> contact@landlister.com.bd
+          </p>
+          <p class="contact-info">
+            <i class="fas fa-phone-alt"></i> +880 17790XXXXX
+          </p>
+          <address>
+            The Fantastic Four <br />
+            Mirpur DOHS, Dhaka-1216<br />
+            Dhaka,Bangladesh
+          </address>
+        </div>
+        <div class="footer-column">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../htmls/about.html">About Us</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>User</h4>
+          <ul>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="#">Help center</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Get exclusive advice</h4>
+          <p class="footer-advice-text">
+            Stay updated with our latest news and offers.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom container">
+        <p>
+          © 2024 LandLister Bangladesh. All rights reserved. Developed by The
+          Fantastic Four.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const registrationForm = document.getElementById("registrationForm");
+
+      if (registrationForm) {
+        registrationForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          let name = document.getElementById("name").value.trim();
+          let fatherName = document.getElementById("f_name").value.trim();
+          let nid = document.getElementById("NID").value.trim();
+          let dob = document.getElementById("dob").value;
+          let mobileNo = document.getElementById("m_n").value.trim();
+          let password = document.getElementById("pw").value;
+          let confirmPassword = document.getElementById("pw2").value;
+
+          if (
+            !name ||
+            !fatherName ||
+            !nid ||
+            !dob ||
+            !mobileNo ||
+            !password ||
+            !confirmPassword
+          ) {
+            alert("Please fill out all the required fields.");
+            return;
+          }
+
+          if (password.length < 6) {
+            alert("Password must be at least 6 characters long.");
+            return;
+          }
+
+          if (password !== confirmPassword) {
+            alert("Passwords do not match!");
+            return;
+          }
+
+          const nidPattern = /^\d{10}$|^\d{13}$|^\d{17}$/;
+          if (!nidPattern.test(nid)) {
+            alert("Please enter a valid NID number (10, 13, or 17 digits).");
+            return;
+          }
+
+          const mobilePattern = /^(01[3-9])\d{8}$/;
+          if (!mobilePattern.test(mobileNo)) {
+            alert(
+              "Please enter a valid 11-digit Bangladeshi mobile number (e.g., 01xxxxxxxxx)."
+            );
+            return;
+          }
+
+          alert("Registration successful! (This is a front-end demo)");
+        });
+      }
+    </script>
+  </body>
+</html>

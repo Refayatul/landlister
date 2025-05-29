@@ -1,165 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LandLister - Your Property Finder</title>    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-54e7be3a62ca9b7580d7f8c669f59e74.css?vsn=d"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
+    <!-- Fallback for Font Awesome 5 icons used in new header/footer if needed -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles/styleHome.css" />
+
+    <title>Home page</title>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                  <img src="./assets/images/logo.png" alt="LandLister Logo" style="height: 40px; margin-right: 10px;">
-                <span>LandLister</span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#properties">Properties</a></li>
-                    <li><a href="#">Sell Your Land</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                 <button class="add-property-btn"><i class="fas fa-plus"></i> Add property</button>
-                <span class="icon user-name"><i class="far fa-user-circle"></i> Rifat</span>
-                <span class="icon"><a href="#" style="color: #555; text-decoration: none;"><i class="fas fa-sign-out-alt"></i> Log Out</a></span>
-               
-            </div>
+      <div class="container">
+        <div class="logo">
+          <img
+            src="../assets/images/logo.png"
+            alt="LandLister Logo"
+            style="height: 40px; margin-right: 10px"
+          />
+          <span>LandLister</span>
         </div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#properties">Properties</a></li>
+            <li><a href="../htmls/addNewProperty.html">Sell Your Land</a></li>
+            <li><a href="../htmls/about.html">About Us</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="add-property-btn">
+            <i class="fas fa-plus"></i> Add property
+          </button>
+          <span class="icon user-name"
+            ><i class="far fa-user-circle"></i> Abdul Karim</span
+          >
+          <span class="icon"
+            ><a href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a></span
+          >
+        </div>
+      </div>
     </header>
 
-    <div class="container page-content">
-        <section class="hero-section">
-            <h1>Find Your Perfect Land</h1>
-            <p>Discover a wide range of land properties for sale and rent.</p>
-            <!-- Optional: Search bar here -->
-        </section>
-
-        <h2 class="section-title" id="properties">Our Properties</h2>
-        <ul class="p_type">
-            <li><a href="#" class="active">All Properties</a></li>
-            <li><a href="#">For Sale</a></li>
-            <li><a href="#">For Rent</a></li>
-        </ul>
-
-        <div class="land-listings">            <a href="landInfo.html?id=1" class="land-card">                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef" alt="Residential Land Plot">
-                <div class="land-card-footer">
-                    <h5>Residential Lands</h5>
-                    <p><i class="fas fa-map-marker-alt"></i> Bashundhara R/A, Dhaka</p>
-                    <span><i class="fas fa-ruler-combined"></i> 5 Katha</span>
-                    <span><i class="fas fa-tag"></i> ৳75,00,000</span>
-                </div>
-            </a>
-            <a href="landInfo.html?id=2" class="land-card">
-                <img src="https://images.unsplash.com/photo-1621460248877-3c5ee3cd8c49" alt="Commercial Land Plot">
-                <div class="land-card-footer">
-                    <h5>Commercial Space</h5>
-                    <p><i class="fas fa-map-marker-alt"></i> Gulshan, Dhaka</p>
-                    <span><i class="fas fa-ruler-combined"></i> 10 Katha</span>
-                    <span><i class="fas fa-tag"></i> ৳2,50,00,000</span>
-                </div>
-            </a>
-            <a href="landInfo.html?id=3" class="land-card">
-                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef" alt="Agricultural Land Plot">
-                <div class="land-card-footer">
-                    <h5>Agricultural Lands</h5>
-                    <p><i class="fas fa-map-marker-alt"></i> Savar, Dhaka</p>
-                    <span><i class="fas fa-ruler-combined"></i> 3 Bigha</span>
-                    <span><i class="fas fa-tag"></i> ৳90,00,000</span>
-                </div>
-            </a>
-        </div>
-
-        <div class="btn-container">
-            <a href="#" class="btn-primary">See All Properties <img src="logo/arrow.png" alt="arrow" style="height: 12px; margin-left: 5px;"></a>
-        </div>
-
-        <div class="quicksearch">
-            <h3>Quick Search</h3>
-            <p>
-                <a href="#">Agriculture</a>
-                <a href="#">Residential</a>
-                <a href="#">Commercial</a>
+    <div class="Banner_part">
+      <div class="container">
+        <div class="banner_wrapper">
+          <div class="banner_text_content">
+            <h2 class="banner_title">Easy way to find a perfect property</h2>
+            <p class="banner_subtitle">
+              We provide a complete service for the sale, purchase or rental of
+              real estate.
             </p>
-        </div>
+          </div>
 
-        <h2 class="section-title">Recently Sold</h2>
-        <div class="sold-listings">            <div class="sold-card">
-                <img src="https://images.unsplash.com/photo-1619545307432-d2b6399e8815" alt="Sold Plot 1">
-                <div><p>Plot in Mirpur DOHS. Sold quickly!</p></div>
+          <div class="Hero_search_div">
+            <img src="./assets/images/Home_icon.png" alt="Home Icon" />
+            <div>
+              <input
+                type="text"
+                class="search_input"
+                placeholder="Enter an address, neighborhood, city, or ZIP code"
+              />
             </div>
-            <div class="sold-card">
-                <img src="https://images.unsplash.com/photo-1595137143080-dad903632e46" alt="Sold Agricultural Land">
-                <div><p>Farmland near Gazipur. Great deal.</p></div>
+            <select name="Location" id="location" class="">
+              <option value="volvo">Type</option>
+              <option value="Agriculture">Agriculture</option>
+              <option value="Building">Sky Scrapper</option>
+              <option value="Rental">Rental</option>
+            </select>
+            <div class="filter_div">
+              <img
+                src="assets/images/filter_icon.png"
+                alt="Filter Icon"
+                class="filter_icon"
+              />
+              <p class="filter_icon_subtitle">Advanced</p>
             </div>
-            <div class="sold-card">
-                <img src="https://images.unsplash.com/photo-1619545307432-d2b6399e8815" alt="Sold Commercial Plot">
-                <div><p>Commercial plot in Motijheel. Excellent investment.</p></div>
-            </div>
+            <i class="fa-light fa-magnifying-glass search_icon"></i>
+          </div>
         </div>
-
-        <section class="about-us-section" id="about">
-            <div class="about-content">
-                <div class="left">
-                    <h2>Join Us for Positive Change</h2>
-                    <p>At LandLister, we are committed to connecting buyers and sellers with transparency and trust. We believe in making the process of finding and acquiring land simple and efficient.</p>
-                </div>                <div class="right">
-                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c" alt="About LandLister">
-                </div>
-            </div>
-        </section>
+      </div>
     </div>
 
-    <footer class="footer" id="contact">
-        <div class="footer-content container">
-            <div class="footer-column">
-                <div class="logo-footer">
-                    <img src="./assets/images/logo.png" alt="LandLister Logo" style="height: 30px; margin-right: 8px;">
-                      LAND LISTER
-                </div>
-                <p class="contact-info"><i class="far fa-envelope"></i> contact@landlister.com.bd</p>
-                <p class="contact-info"><i class="fas fa-phone-alt"></i> +880 17790XXXXX</p>
-                <address>
-                    The Fantastic Four <br>
-                    Mirpur DOHS, Dhaka-1216<br>
-                    Dhaka,Bangladesh
-                 </address>
+    <div class="statistics_part">
+      <div class="container">
+        <div class="statistics_wrapper">
+          <div class="Stats_one stats--baar">
+            <h3 class="stats_title">Home</h3>
+            <div class="stats_sub_sec">
+              <img src="assets/images/bookmark.png" alt="Bookmark Icon" />
+              <p class="stats_summary">6.4K offers</p>
             </div>
-           <div class="footer-column">
-            <h4 style="color: white;">Quick links</h4>
-            <ul>
-                <li><a href="#" style="color: white; text-decoration: none;">Buy Property</a></li>
-                <li><a href="#" style="color: white; text-decoration: none;">Sell Property</a></li>
-                <li><a href="#" style="color: white; text-decoration: none;">Popular Offers</a></li>
-                <li><a href="#" style="color: white; text-decoration: none;">Terms of Service</a></li>
-            </ul>
+          </div>
+
+          <div class="Stats_one stats--baar">
+            <h3 class="stats_title">Apartments</h3>
+            <div class="stats_sub_sec">
+              <img src="assets/images/bookmark.png" alt="Bookmark Icon" />
+              <p class="stats_summary">12.8K offers</p>
+            </div>
+          </div>
+
+          <div class="Stats_one stats--baar">
+            <h3 class="stats_title">Commercial</h3>
+            <div class="stats_sub_sec">
+              <img src="assets/images/bookmark.png" alt="Bookmark Icon" />
+              <p class="stats_summary">9.3K offers</p>
+            </div>
+          </div>
+
+          <div class="Stats_one stats--baar">
+            <h3 class="stats_title">Daily rental</h3>
+            <div class="stats_sub_sec">
+              <img src="assets/images/bookmark.png" alt="Bookmark Icon" />
+              <p class="stats_summary">6.4K offers</p>
+            </div>
+          </div>
+
+          <div class="Stats_one">
+            <h3 class="stats_title">Home</h3>
+            <div class="stats_sub_sec">
+              <img src="assets/images/bookmark.png" alt="Bookmark Icon" />
+              <p class="stats_summary">6.4K offers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card_part">
+      <div class="container">
+        <div class="card_wrapper">
+          <div class="Card_one">
+            <div class="card_one_wrapper">
+              <div class="buy_logo_div">
+                <img
+                  src="./assets/images/buy_button.png"
+                  alt="Buy Button Icon"
+                />
+              </div>
+              <h4 class="Card_one_title">Buy a property</h4>
+              <button class="card_one_btn">find a home</button>
+            </div>
+            <img
+              src="./assets/images/Buy_card_image.png"
+              alt="Buy Card Image"
+            />
+          </div>
+
+          <div class="Card_one two_card">
+            <div class="card_one_wrapper two--wrapper">
+              <div class="buy_logo_div">
+                <img src="./assets/images/home_logo.png" alt="Home Logo Icon" />
+              </div>
+              <h4 class="Card_one_title">Sell a property</h4>
+              <button class="card_one_btn">Place an ad</button>
+            </div>
+            <img
+              src="./assets/images/sell_card_image.png"
+              alt="Sell Card Image"
+              class="sell_card_image"
+            />
+          </div>
+
+          <div class="Card_one">
+            <div class="card_one_wrapper">
+              <div class="buy_logo_div">
+                <img
+                  src="./assets/images/buy_button.png"
+                  alt="Buy Button Icon"
+                />
+              </div>
+              <h4 class="Card_one_title">Buy a property</h4>
+              <button class="card_one_btn">find a home</button>
+            </div>
+            <img
+              src="./assets/images/sell_card_image.png"
+              alt="Sell Card Image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Properties_part" id="properties">
+      <div class="container">
+        <h2 class="property_title_main">Our Featured Properties</h2>
+        <div class="poperty_wrapper">
+          <a href="htmls/landInfo.html" class="property-card-link">
+            <div class="Property_card">
+              <img
+                src="./assets/images/property_home_one.png"
+                alt="Property Home One"
+              />
+              <div class="Property_card_info">
+                <h4 class="Property_title_card">Uttara central home</h4>
+                <div class="">
+                  <p class="Property_price">
+                    <i class="fa-light fa-tag"></i>
+                    <span class="price">53,00,000</span>
+                  </p>
+                  <p class="location">Ashiyan City Dhaka 1230</p>
+                  <p class="size">
+                    <i class="fa-regular fa-ruler-combined"></i>
+                    <span>6 Katha</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="htmls/landInfo.html" class="property-card-link">
+            <div class="Property_card">
+              <img
+                src="./assets/images/property_home_two.png"
+                alt="Property Home Two"
+              />
+              <div class="Property_card_info">
+                <h4 class="Property_title_card">Rupain City complex</h4>
+                <div class="">
+                  <p class="Property_price">
+                    <i class="fa-light fa-tag"></i>
+                    <span class="price">20,00,000</span>
+                  </p>
+                  <p class="location">Ashiyan City Dhaka 1230</p>
+                  <p class="size">
+                    <i class="fa-regular fa-ruler-combined"></i>
+                    <span>6 Katha</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="htmls/landInfo.html" class="property-card-link">
+            <div class="Property_card">
+              <img
+                src="./assets/images/property_home_three.png"
+                alt="Property Home Three"
+              />
+              <div class="Property_card_info">
+                <h4 class="Property_title_card">Dakkhin khan Land</h4>
+                <div class="">
+                  <p class="Property_price">
+                    <i class="fa-light fa-tag"></i>
+                    <span class="price">80,00,000</span>
+                  </p>
+                  <p class="location">Dakshin Khan Dhaka 1230</p>
+                  <p class="size">
+                    <i class="fa-regular fa-ruler-combined"></i>
+                    <span>6 Katha</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="htmls/landInfo.html" class="property-card-link">
+            <div class="Property_card">
+              <img
+                src="./assets/images/property_home_three.png"
+                alt="Property Home Three"
+              />
+              <div class="Property_card_info">
+                <h4 class="Property_title_card">Dakkhin khan Land</h4>
+                <div class="">
+                  <p class="Property_price">
+                    <i class="fa-light fa-tag"></i>
+                    <span class="price">80,00,000</span>
+                  </p>
+                  <p class="location">Dakshin Khan Dhaka 1230</p>
+                  <p class="size">
+                    <i class="fa-regular fa-ruler-combined"></i>
+                    <span>6 Katha</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="htmls/landInfo.html" class="property-card-link">
+            <div class="Property_card">
+              <img
+                src="./assets/images/property_home_two.png"
+                alt="Property Home Two"
+              />
+              <div class="Property_card_info">
+                <h4 class="Property_title_card">Dakkhin khan Land</h4>
+                <div class="">
+                  <p class="Property_price">
+                    <i class="fa-light fa-tag"></i>
+                    <span class="price">80,00,000</span>
+                  </p>
+                  <p class="location">Dakshin Khan Dhaka 1230</p>
+                  <p class="size">
+                    <i class="fa-regular fa-ruler-combined"></i>
+                    <span>6 Katha</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="htmls/landInfo.html" class="property-card-link">
+            <div class="Property_card">
+              <img
+                src="./assets/images/property_home_one.png"
+                alt="Property Home One"
+              />
+              <div class="Property_card_info">
+                <h4 class="Property_title_card">Dakkhin khan Land</h4>
+                <div class="">
+                  <p class="Property_price">
+                    <i class="fa-light fa-tag"></i>
+                    <span class="price">80,00,000</span>
+                  </p>
+                  <p class="location">Dakshin Khan Dhaka 1230</p>
+                  <p class="size">
+                    <i class="fa-regular fa-ruler-combined"></i>
+                    <span>6 Katha</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="btn_div">
+          <button class="more_property_btn">
+            learn more
+            <span><i class="fa-light fa-square-arrow-up-right"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="Right_house">
+      <div class="container">
+        <div class="house_wrapper">
+          <div class="house_left">
+            <h2 class="house_left_title">
+              Let’s find the right selling option for you
+            </h2>
+            <div class="house_sub_sec_wrapper">
+              <div class="housesub_sec">
+                <div>
+                  <img
+                    src="./assets/images/property_management_logo.png"
+                    alt="Property Management Logo"
+                    class=""
+                  />
+                </div>
+                <div class="house_sub_summary">
+                  <h4 class="house_subSec_title">Property Management</h4>
+                  <p class="house_subSec_Subtitle">
+                    Nullam sollicitudin blandit eros eu pretium. Nullam maximus
+                    ultricies auctor.
+                  </p>
+                </div>
+              </div>
+
+              <div class="housesub_sec">
+                <div>
+                  <img
+                    src="./assets/images/mortatage_serviece.png"
+                    alt="Mortgage Service Icon"
+                  />
+                </div>
+                <div class="house_sub_summary">
+                  <h4 class="house_subSec_title">Mortgage Services</h4>
+                  <p class="house_subSec_Subtitle">
+                    Nullam sollicitudin blandit eros eu pretium. Nullam maximus
+                    ultricies auctor.
+                  </p>
+                </div>
+              </div>
+
+              <div class="housesub_sec">
+                <div>
+                  <img
+                    src="./assets/images/currency_serviece.png"
+                    alt="Currency Service Icon"
+                  />
+                </div>
+                <div class="house_sub_summary">
+                  <h4 class="house_subSec_title">Currency Services</h4>
+                  <p class="house_subSec_Subtitle">
+                    Nullam sollicitudin blandit eros eu pretium. Nullam maximus
+                    ultricies auctor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="house_right">
+            <img
+              src="./assets/images/right_home_image.png"
+              alt="Right Home Image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== New Footer part ========================= -->
+    <footer class="footer" id="contact">
+      <div class="footer-content container">
+        <!-- Added .container class here for consistency -->
+        <div class="footer-column">
+          <div class="logo-footer">
+            <img src="../assets/images/logo.png" alt="LandLister Logo" />
+            LAND LISTER
+          </div>
+          <p class="contact-info">
+            <i class="far fa-envelope"></i> contact@landlister.com.bd
+          </p>
+          <p class="contact-info">
+            <i class="fas fa-phone-alt"></i> +880 17790XXXXX
+          </p>
+          <address>
+            The Fantastic Four <br />
+            Mirpur DOHS, Dhaka-1216<br />
+            Dhaka,Bangladesh
+          </address>
         </div>
         <div class="footer-column">
-            <h4 style="color: white;">Profile</h4>
-            <ul>
-                <li><a href="#" style="color: white; text-decoration: none;">My account</a></li>
-                <li><a href="#" style="color: white; text-decoration: none;">My listings</a></li>
-                <li><a href="#" style="color: white; text-decoration: none;">Add listings</a></li>
-                <li><a href="#" style="color: white; text-decoration: none;">Help center</a></li>
-                <li><a href="#" style="color: white; text-decoration: none;">Privacy policy</a></li>
-            </ul>
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="index.html#properties">Buy Property</a></li>
+            <li><a href="addNewProperty.html">Sell Property</a></li>
+            <li><a href="index.html#properties">Popular Offers</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
         </div>
-            <div class="footer-column">
-                <h4>Get exclusive advice</h4>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
+        <div class="footer-column">
+          <h4>Profile</h4>
+          <ul>
+            <li><a href="../htmls/myAccount.html">My account</a></li>
+            <li><a href="../htmls/myAccount.html">My listings</a></li>
+            <li><a href="../htmls/addNewProperty.html">Add listings</a></li>
+            <li><a href="#">Help center</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
         </div>
-        <div class="footer-bottom container">
-            <p>&copy; 2025 LandLister Bangladesh. All rights reserved.</p>
+        <div class="footer-column">
+          <h4>Get exclusive advice</h4>
+          <p style="font-size: 0.9em; margin-bottom: 15px; color: #a0a0a0">
+            Stay updated with our latest news and offers.
+          </p>
+          <!-- This inline style could also be moved to CSS -->
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
         </div>
+      </div>
+      <div class="footer-bottom container">
+        <!-- Added .container class here -->
+        <p>
+          © 2024 LandLister Bangladesh. All rights reserved. Developed by The
+          Fantastic Four.
+        </p>
+      </div>
     </footer>
-</body>
+    <!-- ===== New Footer part End ===================== -->
+  </body>
 </html>

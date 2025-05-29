@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Details - LandLister</title>
+    <link rel="stylesheet" href="../styles/styleHome.css" />
+    <link rel="stylesheet" href="../styles/landInfo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <style>
+      body {
+        background: linear-gradient(to right, #0f3460, #16213e);
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section Start -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img
+            src="../assets/images/logo.png"
+            alt="LandLister Logo"
+            style="height: 40px; margin-right: 10px"
+          />
+          <span>LandLister</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../htmls/myAccount.html">My Account</a></li>
+            <li><a href="../index.html#properties">Properties</a></li>
+            <li><a href="../htmls/about.html">About Us</a></li>
+            <li><a href="../htmls/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <span class="icon user-name">
+            <a href="../htmls/ownerInfo.html" title="View My Public Profile">
+              <i class="far fa-user-circle"></i> Abdul Karim
+            </a>
+          </span>
+          <span class="icon">
+            <a href="#" title="Log Out">
+              <i class="fas fa-sign-out-alt"></i> Log Out</a
+            >
+          </span>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+
+    <div class="container page-content">
+      <!-- Breadcrumbs Section Start -->
+      <div class="breadcrumbs">
+        <a href="index.html">Homepage</a> >
+        <a href="index.html#properties">Properties for Sale</a> >
+        <span id="property-breadcrumb-name"
+          >Road 12, Sector 6, Uttara, Dhaka</span
+        >
+      </div>
+      <!-- Breadcrumbs Section End -->
+
+      <div class="property-details-layout">
+        <!-- Property Gallery Section Start -->
+        <main class="property-gallery">
+          <div class="main-image">
+            <img
+              src="../assets/images/mirpur-plot-front.jpeg"
+              alt="Main plot view"
+              id="main-property-image"
+            />
+          </div>
+          <div class="thumbnail-images">
+            <img
+              src="../assets/images/mirpur-plot-front.jpeg"
+              alt="Plot Front View"
+              class="active"
+            />
+            <img
+              src="../assets/images/mirpur-plot-side.jpeg"
+              alt="Plot Side View"
+            />
+            <img
+              src="../assets/images/mirpur-plot-aerial.jpeg"
+              alt="Plot Aerial View"
+            />
+            <div class="more-photos">
+              <i class="fas fa-camera"></i> <span id="photo-count">3</span>
+            </div>
+          </div>
+
+          <!-- Price Section Start -->
+          <section class="price-section" style="margin-top: 20px">
+            <div class="status-tags">
+              <span class="verified">Verified</span>
+              <span class="new">New</span>
+            </div>
+            <h1 class="property-title" id="property-title-main">
+              Prime Plot in Uttara
+            </h1>
+            <div class="price" id="property-price">৳55,00,000</div>
+            <div class="address" id="property-address">
+              <i class="fas fa-map-marker-alt"></i> Road 12, Sector 6, Uttara,
+              Dhaka - 1230
+            </div>
+            <div class="property-specs">
+              <span
+                ><i class="fas fa-ruler-combined"></i>
+                <span id="property-area">5 Katha</span></span
+              >
+            </div>
+            <div class="actions-share">
+              <div></div>
+              <div class="icons">
+                <span><i class="fas fa-share-alt"></i> Share</span>
+                <span><i class="far fa-heart"></i> Favorite</span>
+              </div>
+            </div>
+          </section>
+          <!-- Price Section End -->
+
+          <!-- About Section Start -->
+          <section class="about-section">
+            <h2 class="section-title">About This Land</h2>
+            <div class="about-content">
+              <div class="highlight-box">
+                <i class="fas fa-star"></i>
+                <span>Premium Location</span>
+              </div>
+              <p id="property-description">
+                A prime plot of land situated in a desirable location, offering
+                excellent potential for development or investment. This
+                well-positioned property benefits from good road access and
+                proximity to local conveniences.
+              </p>
+              <p>
+                Ideal for constructing a dream home or for commercial purposes,
+                subject to planning permissions. The area is known for its
+                growing community and increasing property values, making this a
+                sound investment for the future.
+              </p>
+            </div>
+          </section>
+          <!-- About Section End -->
+
+          <!-- General Info Section Start -->
+          <section class="general-info-section">
+            <h2 class="section-title">Land Information</h2>
+            <div class="info-grid">
+              <div class="info-item">
+                <i class="fas fa-home"></i>
+                <div class="info-content">
+                  <span class="label">Property Type</span>
+                  <span class="value" id="property-type">Plot of Land</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-ruler-combined"></i>
+                <div class="info-content">
+                  <span class="label">Land Area</span>
+                  <span class="value" id="property-area-details"
+                    >5 Katha (approx. 3600 sq.ft)</span
+                  >
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-compass"></i>
+                <div class="info-content">
+                  <span class="label">Facing</span>
+                  <span class="value" id="property-facing">South</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-road"></i>
+                <div class="info-content">
+                  <span class="label">Road Access</span>
+                  <span class="value" id="property-road-access"
+                    >20 ft wide road</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- General Info Section End -->
+
+          <!-- Amenities Section Start -->
+          <section class="amenities-section">
+            <h2 class="section-title">Features & Facilities</h2>
+            <div class="amenities-grid" id="property-amenities">
+              <div class="amenity-item">
+                <i class="fas fa-road"></i>
+                <span>Good Road Access</span>
+              </div>
+              <div class="amenity-item">
+                <i class="fas fa-plug"></i>
+                <span>Utility Connections Nearby</span>
+              </div>
+              <div class="amenity-item">
+                <i class="fas fa-layer-group"></i>
+                <span>Ready for Development</span>
+              </div>
+              <div class="amenity-item">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>Clearly Demarcated</span>
+              </div>
+              <div class="amenity-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>Secure Area</span>
+              </div>
+              <div class="amenity-item">
+                <i class="fas fa-landmark"></i>
+                <span>Close to Amenities</span>
+              </div>
+            </div>
+          </section>
+          <!-- Amenities Section End -->
+
+          <!-- Location Section Start -->
+          <section
+            class="location-section"
+            style="
+              margin: 40px 0;
+              background: #1a1a2e;
+              color: #eee;
+              border-radius: 12px;
+              overflow: hidden;
+            "
+          >
+            <div style="padding: 25px 25px 0 25px">
+              <h2
+                class="section-title"
+                style="margin-bottom: 15px; color: #fff"
+              >
+                <i
+                  class="fas fa-map-marker-alt"
+                  style="color: #e94560; margin-right: 10px"
+                ></i
+                >Location
+              </h2>
+              <p style="margin-bottom: 20px; color: #eee">
+                <i class="fas fa-directions" style="margin-right: 8px"></i>
+                Road 12, Sector 6, Uttara, Dhaka - 1230
+              </p>
+            </div>
+            <div
+              class="map-container"
+              style="
+                position: relative;
+                height: 400px;
+                overflow: hidden;
+                margin: 0 25px 25px;
+                border-radius: 15px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+              "
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.354758509922!2d90.39308991540845!3d23.876961984527073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5f0f0f0f0f1%3A0x0!2sUttara%20Sector%206%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1678886400000!5m2!1sen!2sbd"
+                width="100%"
+                height="400"
+                style="border: 0; position: relative; border-radius: 15px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Property Location"
+              >
+              </iframe>
+              <div
+                style="
+                  position: absolute;
+                  bottom: 20px;
+                  right: 20px;
+                  background: #22244c;
+                  padding: 10px 15px;
+                  border-radius: 8px;
+                  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+                "
+              >
+                <a
+                  href="https://www.google.com/maps?q=23.876961984527073,90.39308991540845"
+                  target="_blank"
+                  style="
+                    text-decoration: none;
+                    color: #e94560;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                  "
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  View on Google Maps
+                </a>
+              </div>
+            </div>
+          </section>
+          <!-- Location Section End -->
+        </main>
+        <!-- Property Gallery Section End -->
+
+        <!-- Property Info Sidebar Start -->
+        <aside class="property-info-main">
+          <div class="owner-box">
+            <div class="owner-picture">
+              <img
+                src="../assets/images/landOwner.png"
+                alt="Abdul Karim"
+                id="owner-pic"
+              />
+            </div>
+            <h3 class="owner-fullname" id="owner-name">Abdul Karim</h3>
+            <p class="owner-role" id="owner-title">Land Owner</p>
+            <div class="owner-contacts">
+              <p>
+                <i class="far fa-envelope"></i>
+                <a href="mailto:abdulkarim@example.com" id="owner-email"
+                  >abdulkarim@example.com</a
+                >
+              </p>
+              <p>
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+8801700000000" id="owner-phone"
+                  >+880 17XX XXX XXX</a
+                >
+              </p>
+            </div>
+
+            <a
+              href="tel:+8801700000000"
+              class="direct-call-btn"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                background: #e94560;
+                color: white;
+                padding: 12px 24px;
+                border-radius: 8px;
+                text-decoration: none;
+                margin: 15px 0;
+                box-shadow: 0 2px 8px rgba(233, 69, 96, 0.3);
+                transition: all 0.3s ease;
+              "
+            >
+              <i class="fas fa-phone"></i> Call Now
+            </a>
+            <a href="ownerInfo.html" class="view-profile-btn">
+              <i class="fas fa-user"></i> View Full Profile
+            </a>
+          </div>
+          <div class="similar-properties-card" style="margin-top: 20px">
+            <h4>Similar Properties</h4>
+            <a href="landInfo.html?id=4" class="similar-property-item">
+              <img
+                src="../assets/images/Mohammedpur1.jpeg"
+                alt="Plot in Mohammadpur"
+              />
+              <div>
+                <h5>Plot in Mohammadpur</h5>
+                <p>6 Katha, ৳75,00,000</p>
+              </div>
+            </a>
+            <a href="landInfo.html?id=5" class="similar-property-item">
+              <img src="../assets/images/mauwa1.jpeg" alt="Plot in Mawa" />
+              <div>
+                <h5>Land in Mawa</h5>
+                <p>8 Katha, ৳90,00,000</p>
+              </div>
+            </a>
+          </div>
+        </aside>
+        <!-- Property Info Sidebar End -->
+      </div>
+    </div>
+
+    <!-- Footer Section Start -->
+    <footer class="footer" id="contact">
+      <div class="footer-content container">
+        <div class="footer-column">
+          <div class="logo-footer">
+            <img
+              src="../assets/images/logo.png"
+              alt="LandLister Logo"
+              style="height: 30px; margin-right: 8px"
+            />
+            LAND LISTER
+          </div>
+          <p class="contact-info">
+            <i class="far fa-envelope"></i> contact@landlister.com.bd
+          </p>
+          <p class="contact-info">
+            <i class="fas fa-phone-alt"></i> +880 17790XXXXX
+          </p>
+          <address>
+            The Fantastic Four <br />
+            Mirpur DOHS, Dhaka-1216<br />
+            Dhaka,Bangladesh
+          </address>
+        </div>
+        <div class="footer-column">
+          <h4 style="color: white">Quick links</h4>
+
+          <ul>
+            <li>
+              <a href="#" style="color: #eee; text-decoration: none"
+                >Buy Property</a
+              >
+            </li>
+            <li>
+              <a href="#" style="color: #eee; text-decoration: none"
+                >Sell Property</a
+              >
+            </li>
+            <li>
+              <a href="#" style="color: #eee; text-decoration: none"
+                >Popular Offers</a
+              >
+            </li>
+            <li>
+              <a href="#" style="color: #eee; text-decoration: none"
+                >Terms of Service</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 style="color: white">Profile</h4>
+          <ul>
+            <li>
+              <a
+                href="../htmls/myAccount.html"
+                style="color: #eee; text-decoration: none"
+                >My account</a
+              >
+            </li>
+            <li>
+              <a href="#" style="color: #eee; text-decoration: none"
+                >My listings</a
+              >
+            </li>
+            <li>
+              <a
+                href="../htmls/addNewProperty.html"
+                style="color: #eee; text-decoration: none"
+                >Add listings</a
+              >
+            </li>
+            <li>
+              <a href="#" style="color: #eee; text-decoration: none"
+                >Help center</a
+              >
+            </li>
+            <li>
+              <a href="#" style="color: #eee; text-decoration: none"
+                >Privacy policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Get exclusive advice</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom container">
+        <p>© 2025 LandLister Bangladesh. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mainImage = document.getElementById("main-property-image");
+        const thumbnails = document.querySelectorAll(".thumbnail-images img");
+
+        thumbnails.forEach((thumb) => {
+          thumb.addEventListener("click", function () {
+            mainImage.src = this.src;
+            mainImage.alt = this.alt;
+            thumbnails.forEach((t) => t.classList.remove("active"));
+            this.classList.add("active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

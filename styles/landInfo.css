@@ -3,149 +3,132 @@
 /* ===================================================================== */
 
 header {
-  background: #1a1a2e !important;
+  background: #1a1a2e;
   padding: 15px 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  color: #fff !important;
-  border-bottom: none !important; /* <<< FIX FOR WHITE LINE */
+  color: #fff;
+  border-bottom: none;
 }
 
 header .container {
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 header .logo span {
-  color: #fff !important;
+  color: #fff;
 }
 
 header nav ul li a {
-  color: #eee !important;
-  text-decoration: none !important;
+  color: #eee;
+  text-decoration: none;
 }
 
 header nav ul li a:hover {
-  color: #e94560 !important;
+  color: #e94560;
 }
 
 header .header-actions .add-property-btn {
-  background-color: #e94560 !important;
-  color: #fff !important;
-  border: none !important;
+  background-color: #e94560;
+  color: #fff;
+  border: none;
 }
 
 header .header-actions .add-property-btn:hover {
-  background-color: #ff5b74 !important;
+  background-color: #ff5b74;
 }
 
 header .header-actions .add-property-btn i {
-  color: #fff !important;
+  color: #fff;
 }
 
 header .header-actions .user-name {
-  color: #eee !important;
+  color: #eee;
 }
 
 header .header-actions .user-name i {
-  color: #eee !important;
+  color: #eee;
   margin-right: 5px;
 }
 
 header .header-actions .icon a {
-  color: #eee !important;
-  text-decoration: none !important;
+  color: #eee;
+  text-decoration: none;
 }
 
 header .header-actions .icon a:hover {
-  color: #e94560 !important;
+  color: #e94560;
 }
 
 header .header-actions .icon a i {
-  color: #eee !important;
+  color: #eee;
   margin-right: 5px;
 }
 
-/* ===================================================================== */
-/* END: Dark Theme Header Styles                                         */
-/* ===================================================================== */
+/* END: Dark Theme Header Styles ===================================== */
 
-/* ===================================================================== */
-/* START: Dark Theme Breadcrumb Styles                                   */
-/* ===================================================================== */
-
+/* START: Dark Theme Breadcrumb Styles =============================== */
 .breadcrumbs {
   padding: 15px 0;
   margin-bottom: 20px;
-  background-color: transparent !important; /* <<< FIX FOR WHITE LINE (if breadcrumbs had bg) */
+  background-color: transparent;
 }
 
 .breadcrumbs a {
-  color: #bac8f2 !important;
-  text-decoration: none !important;
+  color: #bac8f2;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .breadcrumbs a:hover {
-  color: #e94560 !important;
+  color: #e94560;
 }
 
 .breadcrumbs span {
-  color: #99aabb !important;
+  color: #99aabb;
 }
+/* END: Dark Theme Breadcrumb Styles ================================= */
 
-/* ===================================================================== */
-/* END: Dark Theme Breadcrumb Styles                                     */
-/* ===================================================================== */
-
-/* ===================================================================== */
-/* START: Fix White Line After Header & Style Page Content Background    */
-/* ===================================================================== */
-
+/* START: Fix White Line & Page Content BG ========================== */
 .page-content {
-  background-color: transparent !important;
+  background-color: transparent;
   padding-top: 1px;
 }
+/* END: Fix White Line & Page Content BG ============================ */
 
-/* ===================================================================== */
-/* END: Fix White Line After Header                                      */
-/* ===================================================================== */
-
-/* ===================================================================== */
-/* START: Dark Theme Footer Styles (Even Darker Version)                 */
-/* ===================================================================== */
-
+/* START: Dark Theme Footer Styles =================================== */
 .footer {
-  background-color: #1a1a2e !important;
-  color: #b0b0b0 !important;
-  padding: 40px 0 20px !important;
+  background-color: #1a1a2e;
+  color: #b0b0b0;
+  padding: 40px 0 20px;
   margin-top: 40px;
 }
 
 .footer .footer-column .logo-footer {
-  color: #fff !important;
+  color: #fff;
   font-weight: bold;
 }
 
 .footer .footer-column p,
 .footer .footer-column address {
-  color: #a0a0a0 !important;
+  color: #a0a0a0;
   font-size: 0.9em;
   line-height: 1.6;
 }
 
 .footer .footer-column .contact-info i {
-  color: #e94560 !important;
+  color: #e94560;
   margin-right: 8px;
 }
 
 .footer .footer-column h4 {
-  color: #fff !important;
+  color: #fff;
   margin-bottom: 15px;
   font-size: 1.1em;
 }
 
 .footer .footer-column ul {
-  list-style: none !important;
-  padding-left: 0 !important;
+  list-style: none;
+  padding-left: 0;
 }
 
 .footer .footer-column ul li {
@@ -153,24 +136,24 @@ header .header-actions .icon a i {
 }
 
 .footer .footer-column ul li a {
-  color: #b0b0b0 !important;
-  text-decoration: none !important;
+  color: #b0b0b0;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer .footer-column ul li a:hover {
-  color: #e94560 !important;
+  color: #e94560;
 }
 
 .footer .social-icons a {
-  color: #b0b0b0 !important;
+  color: #b0b0b0;
   margin-right: 12px;
   font-size: 1.2em;
   transition: color 0.3s ease;
 }
 
 .footer .social-icons a:hover {
-  color: #e94560 !important;
+  color: #e94560;
 }
 .footer .social-icons a:last-child {
   margin-right: 0;
@@ -180,19 +163,17 @@ header .header-actions .icon a i {
   text-align: center;
   padding-top: 20px;
   margin-top: 20px;
-  border-top: 1px solid #2c2c44 !important;
+  border-top: 1px solid #2c2c44;
 }
 
 .footer .footer-bottom p {
-  color: #888 !important;
+  color: #888;
   font-size: 0.85em;
 }
 
-/* ===================================================================== */
-/* END: Dark Theme Footer Styles (Even Darker Version)                   */
-/* ===================================================================== */
+/* END: Dark Theme Footer Styles ===================================== */
 
-/* Property Details Layout - Original Layout, Colors Changed for Dark Theme */
+/* START: Property Details Page Specific Styles ====================== */
 .property-details-layout {
   display: flex;
   gap: 40px;
@@ -423,8 +404,8 @@ header .header-actions .icon a i {
 }
 
 .direct-call-btn {
-  background-color: #e94560 !important;
-  color: white !important;
+  background-color: #e94560;
+  color: white;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.1em;
@@ -433,7 +414,7 @@ header .header-actions .icon a i {
 }
 
 .direct-call-btn:hover {
-  background-color: #ff5b74 !important;
+  background-color: #ff5b74;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(233, 69, 96, 0.4);
 }
@@ -682,7 +663,9 @@ header .header-actions .icon a i {
   font-size: 1em;
   font-weight: 500;
 }
+/* END: Property Details Page Specific Styles ======================== */
 
+/* START: Responsive Adjustments ==================================== */
 @media (max-width: 768px) {
   .property-details-layout {
     flex-direction: column;
@@ -700,3 +683,4 @@ header .header-actions .icon a i {
     font-size: 2em;
   }
 }
+/* END: Responsive Adjustments ====================================== */

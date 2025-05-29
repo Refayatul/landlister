@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit My Profile - LandLister</title>
+    <link rel="stylesheet" href="../styles/styleHome.css" />
+    <link rel="stylesheet" href="../styles/editOwnerProfile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body class="edit-profile-page-body">
+    <div class="page-content-wrapper">
+      <!-- Header Section Start -->
+      <header>
+        <div class="container">
+          <div class="logo">
+            <img
+              src="../assets/images/logo.png"
+              alt="LandLister Logo"
+              style="height: 40px; margin-right: 10px"
+            />
+            <span>LandLister</span>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../htmls/myAccount.html">My Account</a></li>
+              <li><a href="../index.html#properties">Properties</a></li>
+              <li><a href="../htmls/about.html">About Us</a></li>
+              <li><a href="../htmls/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <span class="icon user-name">
+              <a href="../htmls/ownerInfo.html" title="View My Public Profile">
+                <i class="far fa-user-circle"></i> Abdul Karim
+              </a>
+            </span>
+            <span class="icon">
+              <a href="#" title="Log Out">
+                <i class="fas fa-sign-out-alt"></i> Log Out</a
+              >
+            </span>
+          </div>
+        </div>
+      </header>
+      <!-- Header Section End -->
+
+      <div class="container page-content edit-profile-content">
+        <!-- Breadcrumbs Section Start -->
+        <div class="breadcrumbs">
+          <a href="myAccount.html">My Account</a> > <span>Edit Profile</span>
+        </div>
+        <!-- Breadcrumbs Section End -->
+
+        <!-- Edit Profile Section Start -->
+        <section class="edit-profile-section">
+          <h1 class="page-title">Edit Your Profile</h1>
+
+          <form id="editProfileForm" class="profile-form">
+            <div class="form-grid">
+              <div class="form-group avatar-upload-group">
+                <label for="ownerPhotoUpload">Profile Picture</label>
+                <div class="current-avatar">
+                  <img
+                    src="../assets/images/landOwner.png"
+                    alt="Current Avatar - Abdul Karim"
+                    id="currentAvatarPreview"
+                  />
+                </div>
+                <input
+                  type="file"
+                  id="ownerPhotoUpload"
+                  name="ownerPhoto"
+                  accept="image/*"
+                />
+                <small
+                  >Upload a new photo to change your avatar (e.g., JPG,
+                  PNG).</small
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="ownerName">Full Name</label>
+                <input
+                  type="text"
+                  id="ownerName"
+                  name="ownerName"
+                  value="Abdul Karim"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="ownerTagline">Your Tagline / Role</label>
+                <input
+                  type="text"
+                  id="ownerTagline"
+                  name="ownerTagline"
+                  value="Land Owner & Real Estate Enthusiast"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="ownerEmail">Email Address</label>
+                <input
+                  type="email"
+                  id="ownerEmail"
+                  name="ownerEmail"
+                  value="abdulkarim@example.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="ownerPhone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="ownerPhone"
+                  name="ownerPhone"
+                  value="+88017XXXXXXXX"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="ownerLocation">Location (e.g., City, Area)</label>
+                <input
+                  type="text"
+                  id="ownerLocation"
+                  name="ownerLocation"
+                  value="Mirpur DOHS, Dhaka"
+                />
+              </div>
+            </div>
+
+            <div class="form-group form-group-full">
+              <label for="ownerBio">About Me (Bio)</label>
+              <textarea id="ownerBio" name="ownerBio" rows="6">
+I am the owner of various prime plots. My lands are ideal for development or commercial use, with excellent potential for investment. I prefer to deal directly with buyers and am always available to answer any questions you may have. Feel free to contact me for more details about the properties or to schedule a visit.</textarea
+              >
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-save">Save Changes</button>
+              <a href="ownerInfo.html" class="btn btn-cancel">Cancel</a>
+            </div>
+          </form>
+        </section>
+        <!-- Edit Profile Section End -->
+      </div>
+    </div>
+
+    <!-- Footer Section Start -->
+    <footer class="footer" id="contact">
+      <div class="footer-content container">
+        <div class="footer-column">
+          <div class="logo-footer">
+            <img src="../assets/images/logo.png" alt="LandLister Logo" />
+            LAND LISTER
+          </div>
+          <p class="contact-info">
+            <i class="far fa-envelope"></i> contact@landlister.com.bd
+          </p>
+          <p class="contact-info">
+            <i class="fas fa-phone-alt"></i> +880 17790XXXXX
+          </p>
+          <address>
+            The Fantastic Four <br />
+            Mirpur DOHS, Dhaka-1216<br />
+            Dhaka,Bangladesh
+          </address>
+        </div>
+        <div class="footer-column">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="../index.html#properties">Buy Property</a></li>
+            <li><a href="../htmls/addNewProperty.html">Sell Property</a></li>
+            <li><a href="../index.html#properties">Popular Offers</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Profile</h4>
+          <ul>
+            <li><a href="myAccount.html">My account</a></li>
+            <li><a href="myAccount.html#myListings">My listings</a></li>
+            <li><a href="../htmls/addNewProperty.html">Add listings</a></li>
+            <li><a href="#">Help center</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Get exclusive advice</h4>
+          <p class="footer-advice-text">
+            Stay updated with our latest news and offers.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom container">
+        <p>
+          © 2024 LandLister Bangladesh. All rights reserved. Developed by The
+          Fantastic Four.
+        </p>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <script>
+      const ownerPhotoUpload = document.getElementById("ownerPhotoUpload");
+      const currentAvatarPreview = document.getElementById(
+        "currentAvatarPreview"
+      );
+
+      if (ownerPhotoUpload && currentAvatarPreview) {
+        ownerPhotoUpload.addEventListener("change", function (event) {
+          const file = event.target.files[0];
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+              currentAvatarPreview.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+          }
+        });
+      }
+
+      const editProfileForm = document.getElementById("editProfileForm");
+      if (editProfileForm) {
+        editProfileForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Profile update submitted! (This is a frontend demo)");
+        });
+      }
+    </script>
+  </body>
+</html>

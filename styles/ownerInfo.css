@@ -1,13 +1,10 @@
-/* ===================================================================== */
-/* START: Dark Theme Header Styles                                       */
-/* ===================================================================== */
-
+/* START: Dark Theme Header Styles */
 header {
   background: #1a1a2e !important;
   padding: 15px 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   color: #fff !important;
-  border-bottom: none !important; /* <<< FIX FOR WHITE LINE */
+  border-bottom: none !important;
 }
 
 header .container {
@@ -62,19 +59,13 @@ header .header-actions .icon a i {
   color: #eee !important;
   margin-right: 5px;
 }
+/* END: Dark Theme Header Styles */
 
-/* ===================================================================== */
-/* END: Dark Theme Header Styles                                         */
-/* ===================================================================== */
-
-/* ===================================================================== */
-/* START: Dark Theme Breadcrumb Styles                                   */
-/* ===================================================================== */
-
+/* START: Dark Theme Breadcrumb Styles */
 .breadcrumbs {
   padding: 15px 0;
   margin-bottom: 20px;
-  background-color: transparent !important; /* <<< FIX FOR WHITE LINE (if breadcrumbs had bg) */
+  background-color: transparent !important;
 }
 
 .breadcrumbs a {
@@ -90,28 +81,16 @@ header .header-actions .icon a i {
 .breadcrumbs span {
   color: #99aabb !important;
 }
+/* END: Dark Theme Breadcrumb Styles */
 
-/* ===================================================================== */
-/* END: Dark Theme Breadcrumb Styles                                     */
-/* ===================================================================== */
-
-/* ===================================================================== */
-/* START: Fix White Line After Header & Style Page Content Background    */
-/* ===================================================================== */
-
+/* START: Fix White Line After Header & Style Page Content Background */
 .page-content {
   background-color: transparent !important;
   padding-top: 1px;
 }
+/* END: Fix White Line After Header */
 
-/* ===================================================================== */
-/* END: Fix White Line After Header                                      */
-/* ===================================================================== */
-
-/* ===================================================================== */
-/* START: Dark Theme Footer Styles (Even Darker Version)                 */
-/* ===================================================================== */
-
+/* START: Dark Theme Footer Styles (Even Darker Version) */
 .footer {
   background-color: #1a1a2e !important;
   color: #b0b0b0 !important;
@@ -186,12 +165,9 @@ header .header-actions .icon a i {
   color: #888 !important;
   font-size: 0.85em;
 }
+/* END: Dark Theme Footer Styles (Even Darker Version) */
 
-/* ===================================================================== */
-/* END: Dark Theme Footer Styles (Even Darker Version)                   */
-/* ===================================================================== */
-
-/* Owner Profile Section - Original Layout, Colors Changed for Dark Theme */
+/* START: Owner Profile Section Styles */
 .owner-profile-section {
   background-color: #1a1a2e;
   color: #eee;
@@ -457,7 +433,9 @@ header .header-actions .icon a i {
   margin-top: 15px;
   text-align: right;
 }
+/* END: Owner Profile Section Styles */
 
+/* START: Owner Profile Responsive Adjustments */
 @media (max-width: 992px) {
   .owner-header {
     padding: 30px;
@@ -518,3 +496,4 @@ header .header-actions .icon a i {
     padding: 20px;
   }
 }
+/* END: Owner Profile Responsive Adjustments */

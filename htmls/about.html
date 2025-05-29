@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - LandLister</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="../css/app-wa-54e7be3a62ca9b7580d7f8c669f59e74.css?vsn=d"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: #1a1a2e;
+        color: #f1f1f1;
+
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .page-wrapper {
+        flex: 1 0 auto;
+      }
+
+      .container {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* ================= HEADER STYLES ================= */
+      header {
+        background: #1a1a2e !important;
+        padding: 15px 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        color: #fff !important;
+        border-bottom: 1px solid #2c2c44;
+      }
+
+      header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent !important;
+      }
+
+      header .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      header .logo span {
+        color: #fff !important;
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      header nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+      }
+
+      header nav ul li a {
+        color: #eee !important;
+        text-decoration: none !important;
+        font-size: 16px;
+      }
+
+      header nav ul li a:hover {
+        color: #e94560 !important;
+      }
+
+      header .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+
+      header .header-actions .add-property-btn {
+        background-color: #e94560 !important;
+        color: #fff !important;
+        border: none !important;
+        padding: 10px 18px !important;
+        border-radius: 5px !important;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+      }
+
+      header .header-actions .add-property-btn:hover {
+        background-color: #ff5b74 !important;
+        transform: translateY(-1px);
+      }
+
+      header .header-actions .add-property-btn i {
+        color: #fff !important;
+      }
+
+      header .header-actions .user-name a,
+      header .header-actions .user-name span {
+        color: #eee !important;
+        text-decoration: none !important;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 15px;
+      }
+      header .header-actions .user-name a:hover {
+        color: #e94560 !important;
+      }
+
+      header .header-actions .user-name i {
+        color: #eee !important;
+        font-size: 20px;
+      }
+
+      header .header-actions .icon a {
+        color: #eee !important;
+        text-decoration: none !important;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 15px;
+      }
+
+      header .header-actions .icon a:hover {
+        color: #e94560 !important;
+      }
+
+      header .header-actions .icon a i {
+        color: #eee !important;
+        font-size: 18px;
+      }
+      /* ================= END HEADER STYLES ================= */
+
+      .about-us-content {
+        padding-top: 40px;
+        padding-bottom: 60px;
+      }
+
+      .header-section {
+        text-align: center;
+        background-color: #16213e;
+        color: #ffffff;
+        padding: 50px 20px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .title {
+        font-size: 48px;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      .motto {
+        font-size: 22px;
+        font-style: italic;
+        color: #e94560;
+      }
+
+      .who-we-are {
+        text-align: center;
+        margin-bottom: 50px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .who-we-are h2 {
+        font-size: 38px;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+
+      .who-we-are span.highlight {
+        color: #e94560;
+      }
+
+      .who-we-are p {
+        font-size: 18px;
+        color: #ddd;
+        line-height: 1.7;
+      }
+
+      .developers-row-container {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .developers-row-container h2 {
+        font-size: 38px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        color: #f1f1f1;
+      }
+      .developers-row-container span.highlight {
+        color: #e94560;
+      }
+
+      .developers-row {
+        display: flex;
+
+        flex-wrap: nowrap;
+        gap: 25px;
+        margin-top: 30px;
+        padding-bottom: 20px;
+        overflow-x: auto;
+      }
+
+      .card {
+        background-color: #16213e;
+        border: 1px solid #283c63;
+        border-radius: 12px;
+        padding: 25px;
+        width: 23%;
+        text-align: center;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        min-width: 240px;
+        flex-shrink: 0;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(233, 69, 96, 0.25);
+      }
+
+      .card img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        border: 3px solid #e94560;
+      }
+
+      .card h3 {
+        font-size: 22px;
+        margin-bottom: 8px;
+        color: #e94560;
+        font-weight: 600;
+      }
+
+      .card p {
+        font-size: 15px;
+        color: #ccc;
+        margin: 8px 0;
+        line-height: 1.5;
+      }
+      .card p:last-of-type {
+        font-weight: 300;
+        color: #b0b0b0;
+      }
+
+      .developers-row::-webkit-scrollbar {
+        height: 10px;
+      }
+      .developers-row::-webkit-scrollbar-track {
+        background: #101020;
+        border-radius: 5px;
+      }
+      .developers-row::-webkit-scrollbar-thumb {
+        background-color: #e94560;
+        border-radius: 5px;
+      }
+      .developers-row::-webkit-scrollbar-thumb:hover {
+        background-color: #d83c50;
+      }
+
+      /* ================= FOOTER STYLES ================= */
+      .footer {
+        background-color: #101020;
+        color: #b0b0b0;
+        padding: 50px 0 20px;
+
+        flex-shrink: 0;
+        border-top: 1px solid #2c2c44;
+      }
+
+      .footer .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .footer .footer-column .logo-footer {
+        color: #fff;
+        font-weight: bold;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .footer .footer-column .logo-footer img {
+        height: 35px;
+        margin-right: 10px;
+      }
+
+      .footer .footer-column p,
+      .footer .footer-column address {
+        color: #a0a0a0;
+        font-size: 0.95em;
+        line-height: 1.7;
+      }
+      .footer .footer-column address {
+        font-style: normal;
+        margin-top: 10px;
+      }
+
+      .footer .footer-column .contact-info {
+        margin-bottom: 10px;
+      }
+      .footer .footer-column .contact-info i {
+        color: #e94560;
+        margin-right: 12px;
+        width: 20px;
+        text-align: center;
+      }
+
+      .footer .footer-column h4 {
+        color: #fff;
+        margin-bottom: 20px;
+        font-size: 1.25em;
+        font-weight: 600;
+      }
+
+      .footer .footer-column ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .footer .footer-column ul li {
+        margin-bottom: 12px;
+      }
+
+      .footer .footer-column ul li a {
+        color: #b0b0b0;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        font-size: 0.95em;
+      }
+
+      .footer .footer-column ul li a:hover {
+        color: #e94560;
+      }
+
+      .footer .social-icons {
+        margin-top: 15px;
+      }
+      .footer .social-icons a {
+        color: #b0b0b0;
+        margin-right: 18px;
+        font-size: 1.4em;
+        transition: color 0.3s ease, transform 0.2s ease;
+      }
+      .footer .social-icons a:hover {
+        color: #e94560;
+        transform: scale(1.1);
+      }
+      .footer .social-icons a:last-child {
+        margin-right: 0;
+      }
+
+      .footer .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        margin-top: 30px;
+        border-top: 1px solid #2c2c44;
+        max-width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .footer .footer-bottom p {
+        color: #888;
+        font-size: 0.9em;
+      }
+      /* ================= END FOOTER STYLES ================= */
+
+      @media (max-width: 992px) {
+        header .container {
+          flex-direction: column;
+          gap: 15px;
+        }
+        header nav ul {
+          gap: 20px;
+        }
+        .card {
+          width: 30%;
+          min-width: 220px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .title {
+          font-size: 36px;
+        }
+        .motto {
+          font-size: 18px;
+        }
+        .who-we-are h2,
+        .developers-row-container h2 {
+          font-size: 30px;
+        }
+        header nav {
+          width: 100%;
+          overflow-x: auto;
+          padding-bottom: 10px;
+        }
+        header nav ul {
+          justify-content: center;
+          white-space: nowrap;
+        }
+        header .header-actions {
+          flex-direction: column;
+          gap: 15px;
+          width: 100%;
+          align-items: center;
+        }
+        header .header-actions .add-property-btn {
+          width: 80%;
+          justify-content: center;
+        }
+        .card {
+          min-width: 250px;
+        }
+        .footer .footer-content {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+        .footer .footer-column .logo-footer,
+        .footer .footer-column .social-icons {
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <div class="container">
+          <div class="logo">
+            <img
+              src="../assets/images/logo.png"
+              alt="LandLister Logo"
+              style="height: 40px; margin-right: 10px"
+            />
+            <span>LandLister</span>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../htmls/myAccount.html">My Account</a></li>
+              <li><a href="../index.html#properties">Properties</a></li>
+              <li><a href="../htmls/about.html">About Us</a></li>
+              <li><a href="../htmls/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <!-- <a href="../htmls/addNewProperty.html" class="add-property-btn">
+              <i class="fas fa-plus-circle"></i> Add property</a> -->
+            <span class="icon user-name">
+              <a href="../htmls/ownerInfo.html" title="View My Public Profile">
+                <i class="far fa-user-circle"></i> Abdul Karim
+              </a>
+            </span>
+            <span class="icon">
+              <a href="#" title="Log Out">
+                <i class="fas fa-sign-out-alt"></i> Log Out</a
+              >
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <main class="container about-us-content">
+        <section class="header-section">
+          <h1 class="title">ABOUT US</h1>
+          <p class="motto">
+            Empowering Land Seekers with Trust and Transparency
+          </p>
+        </section>
+
+        <section class="who-we-are">
+          <h2>
+            <span>Who</span> <span class="highlight">We</span> <span>Are.</span>
+          </h2>
+          <p>
+            We are a team of passionate CSE students from BUP, committed to
+            creating a reliable and user-friendly real estate listing platform.
+            Our mission is to simplify the process of discovering trustworthy
+            land opportunities, ensuring every user experience is quick, secure,
+            and transparent.
+          </p>
+        </section>
+
+        <section class="developers-row-container">
+          <h2>Meet <span class="highlight">Our</span> Team</h2>
+          <div class="developers-row">
+            <div class="card">
+              <img src="../assets/images/galib.jpg" alt="Md. Galib Miah" />
+
+              <h3>Abdullah Al Galib</h3>
+              <p>BSc in CSE, BUP</p>
+              <p>Team Lead & Backend Developer</p>
+              <p>Contact: 01779XXXXXX</p>
+            </div>
+            <div class="card">
+              <img src="../assets/images/rimon.jpg" alt="Md. Rimon Hasan" />
+              <h3>Md. Rimon Hasan</h3>
+              <p>BSc in CSE, BUP</p>
+              <p>UI/UX & Frontend Developer</p>
+              <p>Contact: 01811XXXXXX</p>
+            </div>
+            <div class="card">
+              <img src="../assets/images/rifat.png" alt="Md. Rifat Karim" />
+              <h3>Md. Refayatul Islam</h3>
+              <p>BSc in CSE, BUP</p>
+              <p>Full Stack Developer</p>
+              <p>Contact: 01673XXXXXX</p>
+            </div>
+            <div class="card">
+              <img src="../assets/images/megh.jpg" alt="Meghla Akter" />
+              <h3>Meghla Akter</h3>
+              <p>BSc in CSE, BUP</p>
+              <p>Content & Research Lead</p>
+              <p>Contact: 01912XXXXXX</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- End page-wrapper -->
+
+    <footer class="footer" id="contact">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="logo-footer">
+            <img src="../assets/images/logo.png" alt="LandLister Logo" />
+            LAND LISTER
+          </div>
+          <p class="contact-info">
+            <i class="far fa-envelope"></i> contact@landlister.com.bd
+          </p>
+          <p class="contact-info">
+            <i class="fas fa-phone-alt"></i> +880 17790XXXXX
+          </p>
+          <address>
+            The Fantastic Four <br />
+            Mirpur DOHS, Dhaka-1216<br />
+            Dhaka,Bangladesh
+          </address>
+        </div>
+        <div class="footer-column">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="../index.html#properties">Buy Property</a></li>
+            <li><a href="addNewProperty.html">Sell Property</a></li>
+            <li><a href="../index.html#properties">Popular Offers</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Profile</h4>
+          <ul>
+            <li><a href="myAccount.html">My account</a></li>
+            <li><a href="myAccount.html#myListings">My listings</a></li>
+            <li><a href="addNewProperty.html">Add listings</a></li>
+            <li><a href="#">Help center</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Get exclusive advice</h4>
+          <p style="font-size: 0.9em; margin-bottom: 15px; color: #a0a0a0">
+            Stay updated with our latest news and offers.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2024 LandLister Bangladesh. All rights reserved. Developed by The
+          Fantastic Four.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

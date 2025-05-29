@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Account - LandLister</title>
+    <link rel="stylesheet" href="../styles/myAccount.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="page-content-wrapper">
+      <!-- Header Section Start -->
+      <header>
+        <div class="container">
+          <div class="logo">
+            <img
+              src="../assets/images/logo.png"
+              alt="LandLister Logo"
+              style="height: 40px; margin-right: 10px"
+            />
+            <span>LandLister</span>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../htmls/myAccount.html">My Account</a></li>
+              <li><a href="../index.html#properties">Properties</a></li>
+              <li><a href="../htmls/about.html">About Us</a></li>
+              <li><a href="../htmls/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <span class="icon user-name">
+              <a href="../htmls/ownerInfo.html" title="View My Public Profile">
+                <i class="far fa-user-circle"></i> Abdul Karim
+              </a>
+            </span>
+            <span class="icon">
+              <a href="#" title="Log Out">
+                <i class="fas fa-sign-out-alt"></i> Log Out</a
+              >
+            </span>
+          </div>
+        </div>
+      </header>
+      <!-- Header Section End -->
+
+      <div class="container page-content">
+        <!-- Breadcrumbs Section Start -->
+        <div class="breadcrumbs">
+          <a href="../index.html">Dashboard</a> > <span>My Account</span>
+        </div>
+        <!-- Breadcrumbs Section End -->
+
+        <!-- My Account Section Start -->
+        <section class="my-account-section">
+          <h1 class="page-title">My Account Dashboard</h1>
+          <p class="welcome-message">
+            Welcome back, <span id="accountUserName">Abdul Karim</span>!
+          </p>
+
+          <div class="account-grid">
+            <div class="account-card profile-overview-card">
+              <div class="card-header">
+                <i class="fas fa-user-edit card-icon"></i>
+                <h2>Your Profile</h2>
+              </div>
+              <div class="card-body">
+                <div class="current-profile-info">
+                  <img
+                    src="../assets/images/landOwner.png"
+                    alt="User Avatar - Abdul Karim"
+                    id="accountAvatarPreview"
+                  />
+                  <div>
+                    <strong id="accountDisplayName">Abdul Karim</strong>
+                    <p id="accountDisplayTagline">
+                      Land Owner & Real Estate Enthusiast
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="editOwnerProfile.html"
+                  class="btn btn-primary btn-full-width"
+                >
+                  <i class="fas fa-pencil-alt"></i> Edit Public Profile
+                </a>
+              </div>
+            </div>
+
+            <div class="account-card settings-card">
+              <div class="card-header">
+                <i class="fas fa-cog card-icon"></i>
+                <h2>Account Settings</h2>
+              </div>
+              <div class="card-body">
+                <ul class="settings-links">
+                  <li>
+                    <a href="#"
+                      ><i class="fas fa-envelope"></i> Change Email Address</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-key"></i> Change Password</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fas fa-bell"></i> Notification Preferences</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fas fa-map-marker-alt"></i> Manage Addresses</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="account-card listings-card">
+              <div class="card-header">
+                <i class="fas fa-list-alt card-icon"></i>
+                <h2>My Properties</h2>
+              </div>
+              <div class="card-body">
+                <p>
+                  Manage your listed land properties or add new ones to reach
+                  potential buyers.
+                </p>
+                <a
+                  href="../index.html#properties"
+                  class="btn btn-secondary btn-full-width"
+                >
+                  <i class="fas fa-eye"></i> View My Properties
+                </a>
+                <a
+                  href="../htmls/addNewProperty.html"
+                  class="btn btn-primary btn-full-width"
+                  style="margin-top: 15px"
+                >
+                  <i class="fas fa-plus-circle"></i> Add New Property
+                </a>
+              </div>
+            </div>
+
+            <div class="account-card security-card">
+              <div class="card-header">
+                <i class="fas fa-shield-alt card-icon"></i>
+                <h2>Security & Privacy</h2>
+              </div>
+              <div class="card-body">
+                <p>
+                  Enhance your account security and manage your privacy
+                  settings.
+                </p>
+                <ul class="settings-links">
+                  <li>
+                    <a href="#"
+                      ><i class="fas fa-user-shield"></i> Two-Factor
+                      Authentication
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fas fa-history"></i> Login Activity
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fas fa-file-contract"></i> Manage Consents
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="account-actions">
+            <a href="#" class="btn btn-danger"
+              ><i class="fas fa-sign-out-alt"></i> Log Out of Account</a
+            >
+          </div>
+        </section>
+        <!-- My Account Section End -->
+      </div>
+    </div>
+
+    <!-- Footer Section Start -->
+    <footer class="footer" id="contact">
+      <div class="footer-content container">
+        <div class="footer-column">
+          <div class="logo-footer">
+            <img src="../assets/images/logo.png" alt="LandLister Logo" />
+            LAND LISTER
+          </div>
+          <p class="contact-info">
+            <i class="far fa-envelope"></i> contact@landlister.com.bd
+          </p>
+          <p class="contact-info">
+            <i class="fas fa-phone-alt"></i> +880 17790XXXXX
+          </p>
+          <address>
+            The Fantastic Four <br />
+            Mirpur DOHS, Dhaka-1216<br />
+            Dhaka,Bangladesh
+          </address>
+        </div>
+        <div class="footer-column">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="../index.html#properties">Buy Property</a></li>
+            <li><a href="../htmls/addNewProperty.html">Sell Property</a></li>
+            <li><a href="../index.html#properties">Popular Offers</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Profile</h4>
+          <ul>
+            <li><a href="../htmls/myAccount.html">My account</a></li>
+            <li>
+              <a href="../htmls/myAccount.html#myListings">My listings</a>
+            </li>
+            <li><a href="../htmls/addNewProperty.html">Add listings</a></li>
+            <li><a href="#">Help center</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Get exclusive advice</h4>
+          <p class="footer-advice-text">
+            Stay updated with our latest news and offers.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom container">
+        <p>
+          © 2024 LandLister Bangladesh. All rights reserved. Developed by The
+          Fantastic Four.
+        </p>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+  </body>
+</html>
