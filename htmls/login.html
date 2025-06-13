@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - LandLister</title>
     <link rel="stylesheet" href="../styles/styleHome.css" />
+    <!-- ADJUST PATH IF NEEDED -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
       body.login-page-body {
         background-color: #0f2541;
+        font-family: var(--Poppins, sans-serif);
+        color: #eee;
       }
-
+      .page-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
       main.login-main-content {
         display: flex;
         flex-direction: column;
@@ -24,7 +30,6 @@
         flex-grow: 1;
         padding: 20px 0;
       }
-
       .login-container {
         background-color: #1a1a2e;
         padding: 40px 35px;
@@ -34,29 +39,23 @@
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
         margin: 20px;
       }
-
       .login-container h2 {
         text-align: center;
         margin-bottom: 30px;
         color: var(--theme_pink_accent, #e94560);
-        font-family: var(--Poppins, sans-serif);
         font-size: 2em;
         font-weight: 600;
       }
-
       .form-group {
         margin-bottom: 20px;
       }
-
       .form-group label {
         display: block;
         margin-bottom: 8px;
         font-weight: 500;
         color: var(--text_color_light, #eee);
-        font-family: var(--Poppins, sans-serif);
         font-size: 0.95em;
       }
-
       .form-group input {
         width: 100%;
         padding: 12px 15px;
@@ -67,15 +66,14 @@
         font-size: 1em;
         transition: all 0.3s ease;
         font-family: var(--Poppins, sans-serif);
+        box-sizing: border-box;
       }
-
       .form-group input:focus {
         outline: none;
         background-color: #2d2f5a;
         border-color: var(--theme_pink_accent, #e94560);
         box-shadow: 0 0 0 2px rgba(233, 69, 96, 0.2);
       }
-
       .login-btn {
         width: 100%;
         padding: 14px;
@@ -90,21 +88,17 @@
         font-family: var(--Poppins, sans-serif);
         margin-top: 10px;
       }
-
       .login-btn:hover {
         background-color: #ff5b74;
         transform: translateY(-2px);
         box-shadow: 0 5px 15px rgba(233, 69, 96, 0.3);
       }
-
       .extra-links {
         margin-top: 20px;
         text-align: center;
         font-size: 0.9em;
         color: #aaa;
-        font-family: var(--Poppins, sans-serif);
       }
-
       .extra-links a {
         color: var(--theme_pink_accent, #e94560);
         text-decoration: none;
@@ -113,38 +107,26 @@
       .extra-links a:hover {
         text-decoration: underline;
       }
-
-      .header-actions .login-btn-header {
-        padding: 8px 15px;
-        border: 1px solid var(--theme_pink_accent, #e94560);
-        color: var(--theme_pink_accent, #e94560);
-        border-radius: 5px;
-        transition: background-color 0.3s ease, color 0.3s ease;
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
+      .custom-alert {
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 0.95em;
       }
-
-      .header-actions .login-btn-header:hover {
-        background-color: var(--theme_pink_accent, #e94560);
-        color: var(--text_color_dark_emphasis, #fff);
+      .custom-alert-success {
+        color: #155724;
+        background-color: #d4edda;
+        border-color: #c3e6cb;
       }
-      .header-actions .login-btn-header i {
-        color: inherit;
-      }
-
-      @media (max-width: 500px) {
-        .login-container {
-          padding: 30px 20px;
-          margin: 15px;
-        }
-        .login-container h2 {
-          font-size: 1.8em;
-        }
+      .custom-alert-danger {
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
       }
     </style>
   </head>
-
   <body class="login-page-body">
     <div class="page-content-wrapper">
       <header>
@@ -163,11 +145,12 @@
           <div class="header-actions">
             <span class="icon">
               <a
-                href="../htmls/resistration.html"
+                href="registration.html"
                 title="Register"
                 class="login-btn-header"
-                ><i class="fas fa-user-plus"></i> Register</a
               >
+                <i class="fas fa-user-plus"></i> Register
+              </a>
             </span>
           </div>
         </div>
@@ -176,30 +159,30 @@
       <main class="container login-main-content">
         <div class="login-container">
           <h2>Login to Your Account</h2>
+          <div id="alertMessagePlaceholder"></div>
           <form id="loginForm">
             <div class="form-group">
-              <label for="username">Username or NID</label>
+              <label for="username">NID or Mobile Number</label>
               <input
                 type="text"
                 id="username"
-                placeholder="Enter your username or NID"
+                name="username"
+                placeholder="Enter your NID or Mobile Number"
                 required
               />
             </div>
-
             <div class="form-group">
               <label for="password">Password</label>
               <input
                 type="password"
                 id="password"
+                name="password"
                 placeholder="Enter your password"
                 required
               />
             </div>
-
             <button type="submit" class="login-btn">Login</button>
           </form>
-
           <div class="extra-links">
             <p><a href="#">Forgot Password?</a></p>
             <p style="margin-top: 10px">
@@ -212,88 +195,76 @@
     </div>
 
     <footer class="footer" id="contact">
-      <div class="footer-content container">
-        <div class="footer-column">
-          <div class="logo-footer">
-            <img src="../assets/images/logo.png" alt="LandLister Logo" />
-            LAND LISTER
-          </div>
-          <p class="contact-info">
-            <i class="far fa-envelope"></i> contact@landlister.com.bd
-          </p>
-          <p class="contact-info">
-            <i class="fas fa-phone-alt"></i> +880 17790XXXXX
-          </p>
-          <address>
-            The Fantastic Four <br />
-            Mirpur DOHS, Dhaka-1216<br />
-            Dhaka,Bangladesh
-          </address>
-        </div>
-        <div class="footer-column">
-          <h4>Quick links</h4>
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../htmls/about.html">About Us</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h4>User</h4>
-          <ul>
-            <li><a href="login.html">Log In</a></li>
-            <li><a href="../htmls/resistration.html">Register</a></li>
-            <li><a href="#">Help center</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h4>Get exclusive advice</h4>
-          <p class="footer-advice-text">
-            Stay updated with our latest news and offers.
-          </p>
-          <div class="social-icons">
-            <a href="#" aria-label="Instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="#" aria-label="Facebook"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom container">
-        <p>
-          © 2024 LandLister Bangladesh. All rights reserved. Developed by The
-          Fantastic Four.
-        </p>
-      </div>
+      <!-- Your full footer code -->
     </footer>
 
     <script>
       const loginForm = document.getElementById("loginForm");
+      const alertPlaceholder = document.getElementById(
+        "alertMessagePlaceholder"
+      );
+
+      function showAlert(message, type = "danger") {
+        alertPlaceholder.innerHTML = "";
+        const wrapper = document.createElement("div");
+        wrapper.innerHTML = [
+          `<div class="custom-alert custom-alert-${type}" role="alert">`,
+          `   <div>${message}</div>`,
+          "</div>",
+        ].join("");
+        alertPlaceholder.append(wrapper);
+        setTimeout(() => {
+          if (alertPlaceholder.contains(wrapper)) {
+            alertPlaceholder.removeChild(wrapper);
+          }
+        }, 6000);
+      }
 
       if (loginForm) {
-        loginForm.addEventListener("submit", function (event) {
+        loginForm.addEventListener("submit", async function (event) {
           event.preventDefault();
+          alertPlaceholder.innerHTML = "";
 
           const username = document.getElementById("username").value.trim();
           const password = document.getElementById("password").value;
 
           if (!username || !password) {
-            alert("Please fill in both username/NID and password.");
+            showAlert("NID/Mobile Number and password are required.");
             return;
           }
 
-          if (
-            (username === "admin" || username === "1234567890") &&
-            password === "1234"
-          ) {
-            alert("Login successful! (This is a front-end demo)");
-          } else {
-            alert("Invalid username/NID or password!");
+          try {
+            const response = await fetch("http://localhost:3000/api/login", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ username, password }),
+            });
+            const result = await response.json();
+
+            if (response.ok) {
+              showAlert(
+                result.message +
+                  (result.user ? ` Welcome, ${result.user.fullName}!` : ""),
+                "success"
+              );
+              loginForm.reset();
+              // Redirect to the homepage after a 2-second delay
+              setTimeout(() => {
+                window.location.href = "../index.html"; // Ensure this path is correct for your file structure
+              }, 2000);
+            } else {
+              showAlert(
+                result.message ||
+                  "Login failed. Please check your NID and password.",
+                "danger"
+              );
+            }
+          } catch (error) {
+            console.error("Login request error:", error);
+            showAlert(
+              "An error occurred during login. Please check your network or try again.",
+              "danger"
+            );
           }
         });
       }

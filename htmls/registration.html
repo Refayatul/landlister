@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - LandLister</title>
+    <link rel="stylesheet" href="../styles/styleHome.css" />
+    <!-- ADJUST PATH IF NEEDED -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      /* Using the same well-designed CSS as before */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+      body.registration-page-body {
+        background-color: #0f2541;
+        font-family: var(--Poppins, sans-serif);
+        color: #f1f1f1;
+      }
+      .page-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      main.container {
+        flex-grow: 1;
+      }
+      .registration-form-container {
+        background-color: #16213e;
+        padding: 30px 35px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        max-width: 500px;
+        width: 100%;
+        margin: 40px auto;
+      }
+      .registration-form-container h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: var(--theme_pink_accent, #e94560);
+        font-size: 2em;
+        font-weight: 600;
+      }
+      .form-group {
+        margin-bottom: 18px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: var(--text_color_light, #f1f1f1);
+        font-size: 0.95em;
+      }
+      .form-group input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #3a4a6b;
+        background-color: #1e2a40;
+        border-radius: 8px;
+        color: var(--text_color_light, #f1f1f1);
+        transition: border-color 0.3s ease, background-color 0.3s ease;
+        font-family: var(--Poppins, sans-serif);
+        font-size: 1em;
+        box-sizing: border-box;
+      }
+      .form-group input:focus {
+        border-color: var(--theme_pink_accent, #e94560);
+        outline: none;
+        background-color: #24324f;
+        box-shadow: 0 0 0 2px rgba(233, 69, 96, 0.2);
+      }
+      .form-submit-btn {
+        width: 100%;
+        background-color: var(--theme_pink_accent, #e94560);
+        color: var(--text_color_dark_emphasis, #fff);
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.05em;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        font-family: var(--Poppins, sans-serif);
+        margin-top: 10px;
+      }
+      .form-submit-btn:hover {
+        background-color: #ff5b74;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(233, 69, 96, 0.3);
+      }
+      .login-link {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9em;
+      }
+      .login-link a {
+        color: var(--theme_pink_accent, #e94560);
+        text-decoration: none;
+        font-weight: 500;
+      }
+      .login-link a:hover {
+        text-decoration: underline;
+      }
+      .custom-alert {
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 0.95em;
+      }
+      .custom-alert-success {
+        color: #155724;
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+      }
+      .custom-alert-danger {
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+      }
+    </style>
+  </head>
+  <body class="registration-page-body">
+    <div class="page-content-wrapper">
+      <header>
+        <!-- Your header code here -->
+      </header>
+
+      <main class="container">
+        <div class="registration-form-container">
+          <h2>Create Your Account</h2>
+          <div id="alertMessagePlaceholder"></div>
+          <form id="registrationForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="fullName"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="f_name">Father's Name</label>
+              <input
+                type="text"
+                id="f_name"
+                name="fatherName"
+                placeholder="Enter father's name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="NID">National ID (NID)</label>
+              <input
+                type="text"
+                id="NID"
+                name="NID"
+                placeholder="Enter NID number"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="dob">Date of Birth</label>
+              <input type="date" id="dob" name="dob" required />
+            </div>
+            <div class="form-group">
+              <label for="m_n">Mobile No</label>
+              <input
+                type="tel"
+                id="m_n"
+                name="m_n"
+                placeholder="Enter 11-digit mobile number"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="pw">Password</label>
+              <input
+                type="password"
+                id="pw"
+                name="pw"
+                placeholder="Create a strong password"
+                required
+                minlength="6"
+              />
+            </div>
+            <div class="form-group">
+              <label for="pw2">Confirm Password</label>
+              <input
+                type="password"
+                id="pw2"
+                name="pw2"
+                placeholder="Confirm your password"
+                required
+              />
+            </div>
+            <button type="submit" class="form-submit-btn">Register</button>
+          </form>
+          <p class="login-link">
+            Already have an account? <a href="login.html">Log In</a>
+          </p>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <!-- Your footer code here -->
+      </footer>
+    </div>
+
+    <script>
+      const registrationForm = document.getElementById("registrationForm");
+      const alertPlaceholder = document.getElementById(
+        "alertMessagePlaceholder"
+      );
+
+      function showAlert(message, type = "danger", duration = 8000) {
+        alertPlaceholder.innerHTML = "";
+        const wrapper = document.createElement("div");
+        wrapper.innerHTML = `<div class="custom-alert custom-alert-${type}" role="alert"><div>${message}</div></div>`;
+        alertPlaceholder.append(wrapper);
+        setTimeout(() => {
+          if (alertPlaceholder.contains(wrapper)) {
+            alertPlaceholder.removeChild(wrapper);
+          }
+        }, duration);
+      }
+
+      if (registrationForm) {
+        registrationForm.addEventListener("submit", async function (event) {
+          event.preventDefault();
+          alertPlaceholder.innerHTML = "";
+
+          const fullName = document.getElementById("name").value.trim();
+          const fatherName = document.getElementById("f_name").value.trim();
+          const NID = document.getElementById("NID").value.trim();
+          const dob = document.getElementById("dob").value;
+          const m_n = document.getElementById("m_n").value.trim();
+          const pw = document.getElementById("pw").value;
+          const confirmPassword = document.getElementById("pw2").value;
+
+          // --- Client-side validation for instant feedback ---
+          if (
+            !fullName ||
+            !fatherName ||
+            !NID ||
+            !dob ||
+            !m_n ||
+            !pw ||
+            !confirmPassword
+          ) {
+            showAlert("Please fill out all the required fields.");
+            return;
+          }
+          if (pw.length < 6) {
+            showAlert("Password must be at least 6 characters long.");
+            return;
+          }
+          if (pw !== confirmPassword) {
+            showAlert("Passwords do not match!");
+            return;
+          }
+          if (!/^\d{10}$|^\d{13}$|^\d{17}$/.test(NID)) {
+            showAlert(
+              "Please enter a valid NID number (10, 13, or 17 digits)."
+            );
+            return;
+          }
+          if (!/^(01[3-9])\d{8}$/.test(m_n)) {
+            showAlert(
+              "Please enter a valid 11-digit Bangladeshi mobile number."
+            );
+            return;
+          }
+
+          const formData = { fullName, fatherName, NID, dob, m_n, pw };
+
+          try {
+            const response = await fetch("http://localhost:3000/api/register", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(formData),
+            });
+            const result = await response.json();
+
+            // Check if the request was successful (status 201)
+            if (response.status === 201) {
+              showAlert(result.message, "success", 4000);
+              registrationForm.reset();
+              // **ENHANCEMENT: Redirect to login page after a short delay**
+              setTimeout(() => {
+                window.location.href = "login.html";
+              }, 2000); // 2-second delay before redirect
+            } else {
+              // Display the specific error message from the server
+              showAlert(
+                result.message || "Registration failed. Please try again.",
+                "danger"
+              );
+            }
+          } catch (error) {
+            console.error("Registration request error:", error);
+            showAlert(
+              "An error occurred. Please check your network or try again.",
+              "danger"
+            );
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
